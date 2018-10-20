@@ -14,7 +14,7 @@ mongoose.Promise = require('bluebird');
 const Sections = require('./models/sections');
 
 // Connection URL
-const url = 'mongodb://127.0.0.1:27017/veriresume';
+const url = 'mongodb://rohitmittapalli:nbzbol1@ds137483.mlab.com:37483/heroku_jgv4hgpq';
 const connect = mongoose.connect(url, {
     useMongoClient: true,
     /* other options */
