@@ -8,12 +8,12 @@ var verifiable_elementSchema = new Schema({
         unique: false
     },
     public : {
-        type: Boolean,
+        type: String,
         required: true,
         unique: false
     },
     verified: {
-        type: Boolean,
+        type: String,
         required: true,
         unique: false
     }
