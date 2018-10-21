@@ -10,7 +10,7 @@ sectionRouter.use(bodyParser.json());
 
 sectionRouter.route('/')
 .get((req,res,next) => {
-    Sections.find({})
+    Sections.find({}).sort({_id : 1})
     .then((sections) => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
